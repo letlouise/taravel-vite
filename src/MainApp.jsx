@@ -5,7 +5,7 @@ import { FaCar, FaCog, FaInfoCircle, FaSearch, FaChevronDown } from 'react-icons
 import logo from './assets/LOGO.png';
 import destiny from './assets/pacific.jpg';
 
-function App() {
+function MainApp() {
   const [showDetails, setShowDetails] = useState(true);
 
   return (
@@ -96,4 +96,4 @@ function App() {
   );
 }
 
-export default App;
+export default MainApp;
