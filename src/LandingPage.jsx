@@ -7,6 +7,7 @@ function LandingPage() {
   const navigate = useNavigate();
 
   return (
+    //
     <div className="relative min-h-screen w-full overflow-hidden">
       <img src={BG} alt="Background" className="absolute inset-0 w-full h-full object-cover brightness-50" />
       <header className="absolute top-8 left-8 sm:top-10 sm:left-10">
@@ -26,6 +27,9 @@ function LandingPage() {
           GET STARTED
         </button>
       </main>
+      <div>
+
+      </div>
     </div>
   );
 }

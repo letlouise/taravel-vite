@@ -3,7 +3,7 @@ import './App.css';
 import './scrollbar.css';
 import { FaCar, FaCog, FaInfoCircle, FaSearch, FaChevronDown } from 'react-icons/fa';
 import logo from './assets/LOGO.png';
-import destiny from './assets/pacific.jpg';
+import destiny from './assets/mall-front.jpg';
 
 function MainApp() {
   const [showDetails, setShowDetails] = useState(true);
@@ -12,7 +12,7 @@ function MainApp() {
     <div className="bg-white font-montserrat">
       <div className="flex min-h-screen mx-auto border border-black rounded-lg overflow-hidden">
         {/* Sidebar */}
-        <div className="w-[600px] bg-white flex flex-col p-4 space-y-4">
+        <div className="w-[400px] bg-white flex flex-col p-4 space-y-4">
           {/* Header */}
           <div className="flex items-center justify-between">
             <img src={logo} alt="Logo" className="w-30" />
@@ -34,21 +34,21 @@ function MainApp() {
             <button className="flex items-center justify-center w-10 h-10 rounded-md bg-blue-200 text-blue-900 border border-blue-400">
               <FaCar className="text-lg" />
             </button>
-            <select className="flex-1 border border-gray-300 rounded-md py-1.5 px-2 text-xs text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-600">
+            <select className="flex-1 border border-gray-300 rounded-md py-1.5 px-2 text-m text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-600">
               {[1, 2, 3, 4, 5].map(i => <option key={i}>{i}</option>)}
             </select>
-            <p className="text-xs text-gray-500 max-w-[160px]">How many places would you like to visit? <span className="italic">(optional)</span></p>
+            <p className="text-m text-gray-500 max-w-[500px]">How many places would you like to visit? <span className="italic">(optional)</span></p>
           </div>
 
-          <button className="text-[9px] text-blue-700 border border-blue-400 rounded-full px-2 py-[2px] w-max">Profile Vehicle</button>
+          <button className="text-[10px] text-blue-700 border border-blue-400 rounded-full px-2 py-[2px] w-max">Profile Vehicle</button>
 
           {/* Route Details */}
           <button
             onClick={() => setShowDetails(!showDetails)}
-            className="flex items-center justify-between w-full text-sm font-semibold text-gray-700 border-b border-gray-300 pb-1"
+            className="flex items-center justify-between w-full text-sm text-lg font-semibold text-gray-700 border-b border-gray-300 pb-1"
           >
-            <span>Route Details</span>
-            <FaChevronDown className={`text-xs transition-transform duration-200 ${!showDetails ? 'rotate-180' : ''}`} />
+            <span>Descriptions</span>
+            <p className={`text-xs transition-transform ${!showDetails ? 'rotate-180' : ''}`}>Directions</p>
           </button>
 
           {showDetails && (
@@ -67,8 +67,8 @@ function MainApp() {
           )}
 
           <p className="text-[9px] font-semibold text-gray-500 mt-2">RECOMMENDATIONS:</p>
-          <div className="flex justify-center items-center w-full max-w-[280px] rounded-lg overflow-hidden shadow-lg border border-gray-200 aspect-[4/3]">
-            <img src={destiny} alt="Shopping mall" className="w-full h-full object-cover" />
+          <div className="flex justify-center items-center w-full max-w-[600px] rounded-lg overflow-hidden shadow-lg border border-gray-200 aspect-[4/3]">
+            <img src={destiny} alt="Shopping mall" className="w-auto h-full" />
           </div>
           <p className="text-[9px] text-center text-gray-600 mt-1 select-none">SHOW DETAILS</p>
 
