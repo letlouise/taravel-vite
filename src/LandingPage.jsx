@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-import './App.css';
 import WLogo from "./assets/whiteLogo.png"
 import BG from "./assets/bg.png"
 
