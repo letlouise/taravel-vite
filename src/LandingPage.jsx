@@ -6,6 +6,7 @@ function LandingPage() {
   const navigate = useNavigate();
 
   return (
+    //
     <div className="relative min-h-screen w-full overflow-hidden">
       {/* Background Image */}
       <img
@@ -36,6 +37,9 @@ function LandingPage() {
           GET STARTED
         </button>
       </main>
+      <div>
+
+      </div>
     </div>
   );
 }
