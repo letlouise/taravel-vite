@@ -43,7 +43,7 @@ const App = () => {
         </form>
 
         {/* Tabs */}
-        <div className="flex space-x-4 mb-6">
+        <div className="flex justify-center space-x-8 mb-6">
           {["description", "travelplan"].map((tab) => (
             <button
               key={tab}
